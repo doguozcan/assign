@@ -14,7 +14,7 @@ const TasksList = () => {
     </div>
   ))
   return (
-    <div>
+    <div className="p-2">
       {<AddTask />}
       <h1>Tasks</h1>
       {renderedTasks}

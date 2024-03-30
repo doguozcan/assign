@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
+import { IoMdArrowRoundBack } from 'react-icons/io'
 
 const Task = () => {
   const { taskId } = useParams()
@@ -18,8 +19,12 @@ const Task = () => {
   }
 
   return (
-    <div>
-      <button onClick={goBack} className="text-orange-400">
+    <div className="p-2">
+      <button
+        onClick={goBack}
+        className="text-orange-400 flex gap-2 items-center my-2"
+      >
+        <IoMdArrowRoundBack />
         Go back
       </button>
       <h2>{task.title}</h2>

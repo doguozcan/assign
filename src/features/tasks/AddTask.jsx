@@ -55,7 +55,7 @@ const AddTask = () => {
         </select>
         <button
           disabled={!canSave}
-          className="bg-orange-400 p-2 my-2 rounded-lg disabled:bg-yellow-800"
+          className="bg-orange-400 p-2 my-2 rounded-lg disabled:bg-yellow-800 text-white"
         >
           Save task
         </button>

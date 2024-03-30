@@ -6,6 +6,7 @@ import TimeAgo from './TimeAgo'
 import { FaGlasses } from 'react-icons/fa'
 import { FaBullseye } from 'react-icons/fa'
 import { IoTimeOutline } from 'react-icons/io5'
+import ReactionButtons from './ReactionButtons'
 
 const TasksList = () => {
   const tasks = useSelector((state) => state.tasks)
@@ -34,10 +35,11 @@ const TasksList = () => {
           View task
         </Link>
       </p>
+      <ReactionButtons task={task} />
     </div>
   ))
   return (
-    <div className="p-2 text-center">
+    <div className="p-2">
       {<AddTask />}
       <h1 className="text-xl">Tasks</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-center">

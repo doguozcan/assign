@@ -13,9 +13,17 @@ const tasksSlice = createSlice({
     taskAdded(state, action) {
       state.push(action.payload)
     },
+    taskUpdated(state, action) {
+      const { id, title } = action.payload
+      const existingTask = state.find((post) => post.id === id)
+
+      if (existingTask) {
+        existingTask.title = title
+      }
+    },
   },
 })
 
-export const { taskAdded } = tasksSlice.actions
+export const { taskAdded, taskUpdated } = tasksSlice.actions
 
 export default tasksSlice.reducer

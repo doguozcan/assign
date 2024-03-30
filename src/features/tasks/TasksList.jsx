@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux'
+import AddTask from './AddTask'
 
 const TasksList = () => {
   const tasks = useSelector((state) => state.tasks)
@@ -10,6 +11,7 @@ const TasksList = () => {
   ))
   return (
     <div>
+      {<AddTask />}
       <h1>Tasks</h1>
       {renderedTasks}
     </div>

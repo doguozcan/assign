@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { taskAdded } from './taskSlice'
+import { taskAdded } from './tasksSlice'
 
 const AddTask = () => {
   const [title, setTitle] = useState('')
@@ -33,7 +33,7 @@ const AddTask = () => {
     <div className="flex justify-center p-2 bg-orange-600 rounded-lg">
       <form onSubmit={handleSubmit} className="flex flex-col w-1/2 max-w-sm">
         <label htmlFor="title" className="text-white text-center text-lg">
-          Title
+          Task
         </label>
         <input
           id="title"

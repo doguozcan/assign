@@ -5,7 +5,7 @@ const Navbar = () => {
     <div className="font-mono">
       <section className="p-5 bg-orange-400 flex justify-center">
         <Link to="/" className="text-xl text-white">
-          Posts
+          Tasks
         </Link>
       </section>
       <Outlet />

@@ -85,11 +85,12 @@ const tasksSlice = createSlice({
       },
     },
     taskUpdated(state, action) {
-      const { id, title } = action.payload
+      const { id, userId, title } = action.payload
       const existingTask = state.find((post) => post.id === id)
 
       if (existingTask) {
         existingTask.title = title
+        existingTask.userId = userId
       }
     },
   },

@@ -1,16 +1,24 @@
-# Assign
+# Assign 🏢
 
-## About
+## About 📖
 
 Assign is an app that I have built in order to practice my intermediate Redux skills. With assign, a manager can assign tasks to his/her employees.
 
-## Features
+## Features 🔩
 
 - **Asign tasks to employees**: You can give tasks to specific employees. After assignment, you can edit the task and the user.
 - **Emojis**: You can give reactions to tasks with specific emojis.
 - **RTK and React Redux Features**: RTK's hooks such as configureStore, createSlice or react-redux's methods such as useSelector and useDispatch used in the app so you can practice your Redux skills with this app.
 
-## Getting Started
+## Packages used 📁
+
+- **<a href="https://www.npmjs.com/package/@reduxjs/toolkit">Redux Toolkit</a>**
+- **<a href="https://www.npmjs.com/package/react-redux">React Redux</a>**
+- **<a href="https://www.npmjs.com/package/react-router-dom">React Router Dom</a>**
+- **<a href="https://www.npmjs.com/package/react-icons">React Icons</a>**
+- **<a href="https://www.npmjs.com/package/date-fns">date-fns</a>**
+
+## Getting Started 🎬
 
 ### Prerequisites
 

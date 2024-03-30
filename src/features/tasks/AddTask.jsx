@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { nanoid } from '@reduxjs/toolkit'
 import { taskAdded } from './taskSlice'
 
 const AddTask = () => {
@@ -12,7 +11,7 @@ const AddTask = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (title) {
-      dispatch(taskAdded({ id: nanoid(), title }))
+      dispatch(taskAdded(title))
       setTitle('')
     }
   }

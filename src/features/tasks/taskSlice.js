@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { nanoid } from '@reduxjs/toolkit'
 
 const initialState = [
   { id: '1', title: 'Clean the rooms' },
@@ -10,8 +11,18 @@ const tasksSlice = createSlice({
   name: 'tasks',
   initialState,
   reducers: {
-    taskAdded(state, action) {
-      state.push(action.payload)
+    taskAdded: {
+      reducer(state, action) {
+        state.push(action.payload)
+      },
+      prepare(title) {
+        return {
+          payload: {
+            id: nanoid(),
+            title,
+          },
+        }
+      },
     },
     taskUpdated(state, action) {
       const { id, title } = action.payload

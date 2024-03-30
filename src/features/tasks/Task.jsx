@@ -19,7 +19,7 @@ const Task = () => {
 
   return (
     <div>
-      <button onClick={goBack} className="text-sky-500">
+      <button onClick={goBack} className="text-orange-400">
         Go back
       </button>
       <h2>{task.title}</h2>

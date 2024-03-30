@@ -8,7 +8,7 @@ const TasksList = () => {
   const renderedTasks = tasks.map((task) => (
     <div key={task.id}>
       <h2>{task.title.substring(0, 25)}</h2>
-      <Link to={`tasks/${task.id}`} className="text-sky-500">
+      <Link to={`tasks/${task.id}`} className="text-orange-400">
         View Task
       </Link>
     </div>

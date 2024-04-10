@@ -4,6 +4,10 @@
 
 Assign is an app that I have built in order to practice my intermediate Redux skills. With assign, a manager can assign tasks to his/her employees.
 
+## Reference & Inspiration 📙
+
+**<a href="https://redux.js.org/tutorials/essentials/part-4-using-data">Redux Toolkit's Official Documentation: Redux Essentials, Part 4: Using Redux Data</a>**
+
 ## Features 🔩
 
 - **Asign tasks to employees**: You can give tasks to specific employees. After assignment, you can edit the task and the user.

@@ -43,4 +43,4 @@ Assign is an app that I have built in order to practice my intermediate Redux sk
 
 ## Live Preview
 
-- You can visit <a href="https://stellular-churros-82f786.netlify.app/">the live preview</a>
+- You can visit <a href="https://willowy-semifreddo-8d4a7c.netlify.app/">the live preview</a>

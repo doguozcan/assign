@@ -5,6 +5,7 @@
 Assign is an app that I have built in order to practice my intermediate Redux skills. With assign, a manager can assign tasks to his/her employees.
 
 ## Screenshot
+
 ![assign](https://github.com/doguozcan/assign/assets/76822280/a65e7f41-d8f9-450f-a1a5-e53bf178e804)
 
 ## Reference & Inspiration 📙
